@@ -42,8 +42,8 @@ accuracy = accuracy[1]*100
 print(accuracy)
  
 import os
-os.system("sudo touch /permdata/accuracy.txt")
-os.system("sudo echo {} > /permdata/accuracy.txt".format(accuracy))
+os.system("touch /permdata/accuracy.txt")
+os.system("echo {} > /permdata/accuracy.txt".format(accuracy))
 
 
 model.save('/permdata/multiclassDL.h5')

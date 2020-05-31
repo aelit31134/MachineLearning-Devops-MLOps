@@ -9,7 +9,7 @@ df = pd.read_csv('/root/workshop/wines.csv')
 
 y = df['Class']
 
-
+print(df)
 y_cat = pd.get_dummies(y)
 
 X = df.drop('Class' , axis=1)

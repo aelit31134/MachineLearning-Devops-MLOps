@@ -5,7 +5,7 @@ from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 from keras.optimizers import Adam
 
-df = pd.read_csv('/root/workspace/wines.csv')
+df = pd.read_csv('wines.csv')
 
 y = df['Class']
 
